@@ -15,6 +15,6 @@ It does NOT:
 - pillow
 
 # Bot syntax
-## SHIVER specific: !shiver <expression>
-- <expression> takes on the form of Xsd Ytd (min|maj) (dis|adv); everything after Xsd is optional
+## SHIVER specific: !shiver {expression}
+- {expression} takes on the form of Xsd Ytd (min|maj) (dis|adv); everything after Xsd is optional
 - X and Y can never be lower than 1
