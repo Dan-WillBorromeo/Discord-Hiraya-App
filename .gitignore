@@ -1,0 +1,8 @@
+important.txt
+utils/__pycache__/
+cogs/__pycache__/
+assets/
+.env
+requirements.txt
+discord.log
+merged.png
