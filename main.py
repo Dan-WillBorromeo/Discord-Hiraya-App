@@ -15,7 +15,7 @@ init_ext = ["cogs.dice", "cogs.shiver"]
 
 @bot.event
 async def on_ready():
-    print(f"Ready to go in, {bot.user.name}")
+    print(f"{bot.user.name} is ready to go in, boss!")
 
 # @bot.event
 # async def on_message(message):

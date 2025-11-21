@@ -69,6 +69,8 @@ def rollShiver (expression: str):
                 talentDiceCount -= 1
 
     skillResults = [rollSkill() for die in range(skillDiceCount)]
+    skillResults.sort()
     talentResults = [rollTalent() for die in range(talentDiceCount)]
+    talentResults.sort()
 
     return skillResults + talentResults

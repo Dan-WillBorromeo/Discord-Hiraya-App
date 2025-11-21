@@ -22,7 +22,14 @@ class ShiverCog(commands.Cog):
         merged = mergeImagesHorizontal(paths, "merged.png")
         file = discord.File(merged, filename="merged.png")
 
-        await ctx.send(content=ctx.author.mention,file=file)
+        botReply = ctx.author.mention + "\n\n"
+        for index, name in enumerate(names):
+            if index == len(names)-1:
+                botReply += name
+            else:
+                botReply += name +", "
+
+        await ctx.send(content=botReply,file=file)
 
 async def setup(bot):
     await bot.add_cog(ShiverCog(bot))
